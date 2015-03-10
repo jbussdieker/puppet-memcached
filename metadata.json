@@ -8,5 +8,22 @@
   "project_page": "http://github.com/jbussdieker/puppet-memcached",
   "issues_url": "https://github.com/jbussdieker/puppet-memcached/issues",
   "description": "This module can be used for basic Memcached Management",
-  "dependencies": []
+  "operatingsystem_support": [
+    {
+      "operatingsystem": "Ubuntu",
+      "operatingsystemrelease": [ "14.04" ]
+    }
+  ],
+  "requirements": [
+    {
+      "name": "puppet",
+      "version_requirement": "3.x"
+    }
+  ],
+  "dependencies": [],
+  "tags": [
+    "applications",
+    "ubuntu",
+    "memcached"
+  ]
 }
