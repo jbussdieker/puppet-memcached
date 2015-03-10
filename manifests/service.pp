@@ -1,7 +1,7 @@
 # == Class: memcached::service
 class memcached::service {
 
-  service {'memcached':
+  service { 'memcached':
     ensure => running,
   }
 

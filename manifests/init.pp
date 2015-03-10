@@ -33,16 +33,16 @@ class memcached(
   $connection_limit = 1024
 ) {
 
-  class {'memcached::package':
+  class { 'memcached::package':
     notify => Class['memcached::service'],
   }
 
-  class {'memcached::config':
+  class { 'memcached::config':
     notify  => Class['memcached::service'],
     require => Class['memcached::package'],
   }
 
-  class {'memcached::service':
+  class { 'memcached::service':
     require => Class['memcached::config'],
   }
 

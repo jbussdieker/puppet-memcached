@@ -1,7 +1,7 @@
 # == Class: memcached::config
 class memcached::config {
 
-  file {'/etc/default/memcached':
+  file { '/etc/default/memcached':
     ensure  => present,
     owner   => 'root',
     group   => 'root',
@@ -9,7 +9,7 @@ class memcached::config {
     content => template('memcached/default.erb'),
   }
 
-  file {'/etc/memcached.conf':
+  file { '/etc/memcached.conf':
     ensure  => present,
     owner   => 'root',
     group   => 'root',
