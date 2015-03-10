@@ -1,5 +1,0 @@
-name    'jbussdieker-memcache'
-source  'git@github.com:jbussdieker/puppet-memcache.git'
-author  'Joshua B. Bussdieker'
-summary 'Memcache Module'
-version '0.0.2'
