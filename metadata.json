@@ -7,5 +7,6 @@
   "source": "http://github.com/jbussdieker/puppet-memcached",
   "project_page": "http://github.com/jbussdieker/puppet-memcached",
   "issues_url": "https://github.com/jbussdieker/puppet-memcached/issues",
-  "description": "This module can be used for basic Memcached Management"
+  "description": "This module can be used for basic Memcached Management",
+  "dependencies": []
 }
