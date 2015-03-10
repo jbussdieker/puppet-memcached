@@ -1,3 +1,4 @@
+# == Class: memcached::service
 class memcached::service {
 
   service {'memcached':

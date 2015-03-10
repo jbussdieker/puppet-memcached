@@ -1,3 +1,28 @@
+# == Class: memcached
+#
+# Main class to install and configure Memcached.
+#
+# === Examples
+#
+# Install Memcached.
+#
+#  class { 'memcached': }
+#
+# Install Memcached with specific config.
+#
+#  class { 'memcached': }
+#    memory_max  => 32,
+#    listen_port => 11212,
+#  }
+#
+# === Authors
+#
+# Joshua B. Bussdieker <jbussdieker@gmail.com>
+#
+# === Copyright
+#
+# Copyright 2015 Joshua B. Bussdieker, unless otherwise noted.
+#
 class memcached(
   $enable_memcached = 'yes',
   $log_file         = '/var/log/memcached.log',
