@@ -43,7 +43,8 @@ class memcached(
   }
 
   class { 'memcached::service':
-    require => Class['memcached::config'],
+    enable_memcached => $enable_memcached,
+    require          => Class['memcached::config'],
   }
 
 }
