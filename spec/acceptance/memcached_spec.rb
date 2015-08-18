@@ -21,4 +21,9 @@ describe 'memcached class' do
       expect(shell("memcached -h").exit_code).to eql(0)
     end
   end
+
+  describe service('memcached') do
+    it { should be_running  }
+    it { should be_enabled  }
+  end
 end
